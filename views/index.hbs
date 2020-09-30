@@ -1,0 +1,19 @@
+<html>
+    <head>
+    
+    </head>
+    <body>
+        <form action="register" method="post" enctype="multipart/form-data">
+            Username<input name="username" type="text"> <br>
+            Profile<input name="image" type="file"> <br>
+            <input type="submit" value="register">
+        </form>
+        
+        {{#each users}}
+            <div data-id="{{_id}}">
+                {{username}} 
+                <img src="data:image/{{img.contentType}};base64,{{#tobase64 img.data}}{{/tobase64}}">
+            </div>
+        {{/each}}
+    </body>
+</html>
