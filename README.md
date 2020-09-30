@@ -22,6 +22,8 @@ _To learn more about base64 data URI check out this mdn page: https://developer.
 
 
 
+**Also, make sure that you have an uploads folder to temporary store the images while they are being converted into buffer types"
+
 
 
 
